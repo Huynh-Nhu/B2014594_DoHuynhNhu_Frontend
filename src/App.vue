@@ -1,13 +1,19 @@
 <script>
+import AppHeader from "@/components/AppHeader.vue";
 export default {
-
-}
+  components: {
+    AppHeader,
+  },
+};
 </script>
 
 <template>
-  <h1>
-    Hello, Vue.js!
-  </h1>
+  <div id="app container ">
+    <AppHeader />
+    <div class="mt-3 ">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <style>
@@ -15,5 +21,4 @@ export default {
   max-width: 400px;
   margin: auto;
 }
-
 </style>
